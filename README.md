@@ -7,15 +7,18 @@ Program ini berfungsi untuk mengelola penyimpanan buku secara digital pada rak b
 
 # Penjelasan Kode
 
-​Persiapan Wadah (Inisialisasi):
+​1.Persiapan Wadah (Inisialisasi):
 Program menyiapkan sebuah "Rak" virtual dalam bentuk List 2D berukuran 3 × 2 (3 baris, 2 kolom). Pada awalnya, semua posisi diisi dengan teks "Kosong".
-​Sistem Navigasi (Indeks):
+​
+2.Sistem Navigasi (Indeks):
 Untuk mengelola rak, program menggunakan dua koordinat utama:
-​Baris (Indeks pertama): Menentukan tingkat rak (0, 1, atau 2).
-​Kolom (Indeks kedua): Menentukan posisi slot (0 untuk Kiri, 1 untuk Kanan).
-​Alur Interaksi:
-​Menampilkan Data: Program melakukan looping (perulangan) untuk membaca seluruh isi list dari baris pertama hingga terakhir, lalu menampilkannya ke layar.
-​Menyimpan Data: Saat user ingin menyimpan buku, program meminta dua nomor indeks (baris dan kolom). Jika nomor yang dimasukkan tersedia (valid), program akan menimpa data di koordinat tersebut dengan judul buku yang baru.
-​Validasi Keamanan: Terdapat pengecekan kondisi (if) untuk memastikan user tidak memasukkan nomor rak/slot yang tidak ada di memori. Jika input di luar jangkauan (misalnya memasukkan rak nomor 4), program akan menolak akses tersebut untuk mencegah error (crash).
-​Siklus Program:
+​-Baris (Indeks pertama): Menentukan tingkat rak (0, 1, atau 2).
+​K-olom (Indeks kedua): Menentukan posisi slot (0 untuk Kiri, 1 untuk Kanan).
+​
+3.Alur Interaksi:
+​-Menampilkan Data: Program melakukan looping (perulangan) untuk membaca seluruh isi list dari baris pertama hingga terakhir, lalu menampilkannya ke layar.
+​-Menyimpan Data: Saat user ingin menyimpan buku, program meminta dua nomor indeks (baris dan kolom). Jika nomor yang dimasukkan tersedia (valid), program akan menimpa data di koordinat tersebut dengan judul buku yang baru.
+​-Validasi Keamanan: Terdapat pengecekan kondisi (if) untuk memastikan user tidak memasukkan nomor rak/slot yang tidak ada di memori. Jika input di luar jangkauan (misalnya memasukkan rak nomor 4), program akan menolak akses tersebut untuk mencegah error (crash).
+​
+4.Siklus Program:
 Program dibungkus dalam perulangan while, sehingga user bisa terus melakukan manajemen rak sampai user memilih opsi "Keluar".

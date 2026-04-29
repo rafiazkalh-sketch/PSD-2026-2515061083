@@ -22,3 +22,7 @@ Untuk mengelola rak, program menggunakan dua koordinat utama:
 ​
 4.Siklus Program:
 Program dibungkus dalam perulangan while, sehingga user bisa terus melakukan manajemen rak sampai user memilih opsi "Keluar".
+# Output Program
+<img width="943" height="749" alt="Screenshot 2026-04-29 224035" src="https://github.com/user-attachments/assets/943522d4-4b9f-4c44-85dc-6d8c1a89b50d" />
+<img width="907" height="799" alt="Screenshot 2026-04-29 224103" src="https://github.com/user-attachments/assets/8700a36a-00f1-4f8c-8521-24b1fb4254ab" />
+<img width="898" height="325" alt="Screenshot 2026-04-29 224126" src="https://github.com/user-attachments/assets/45cea7f1-3538-4f6d-9a5f-cbb3bc1e58d1" />

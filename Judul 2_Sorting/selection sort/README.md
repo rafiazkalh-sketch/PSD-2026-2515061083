@@ -29,5 +29,9 @@ Fungsi ini bertugas menyiapkan data dan menampilkan hasil ke layar.
 Baris ini memastikan bahwa fungsi main() akan langsung dijalankan secara otomatis ketika file Python tersebut dieksekusi.
 # Output Program
 <img width="471" height="345" alt="Screenshot 2026-05-04 224703" src="https://github.com/user-attachments/assets/50947d86-e51c-4ce6-adb5-f9dd73c09dac" />
+
 # Penjelasan Output
+
 berisi data yg blum terurut atau acak,lalu dibeikan data yg sudah terurut dari yg paling murah geprek arsy,sampai yg paling mahal mister geprek
+# Link Youtube
+https://youtu.be/hqIsV1r8v0I

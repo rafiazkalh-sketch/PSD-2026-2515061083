@@ -3,8 +3,10 @@
 Program ini dirancang sebagai solusi sederhana untuk membantu pembeli dalam menentukan pilihan menu makanan berdasarkan budget yang dimiliki dengan cara mengurutkan daftar harga secara otomatis. Program ini menyimpan data nama paket ayam geprek dan harganya ke dalam struktur data array atau list. Dengan adanya program ini, daftar menu yang sebelumnya berantakan dapat ditampilkan secara rapi dari harga yang paling ekonomis hingga yang paling mahal.
 Algoritma struktur data yang diterapkan dalam studi kasus ini adalah Selection Sort. Cara kerja algoritma ini adalah dengan memindai seluruh elemen dalam daftar untuk mencari nilai harga terkecil, kemudian menukarnya dengan elemen di posisi pertama. Proses ini diulangi untuk posisi selanjutnya hingga seluruh data harga dan nama menu yang terkait telah terurut secara ascending (kecil ke besar). Pemilihan Selection Sort didasarkan pada efisiensi pertukaran data yang lebih sedikit dibandingkan Bubble Sort, sehingga cocok untuk pengurutan daftar menu yang bersifat statis.
 # Source Code
-<img width="471" height="345" alt="Screenshot 2026-05-04 224703" src="https://github.com/user-attachments/assets/cf2fe81a-4dba-497b-875f-8fab0e80ba77" />
+<img width="1135" height="698" alt="Screenshot 2026-05-04 224627" src="https://github.com/user-attachments/assets/00fee104-c7a9-45c3-be13-e6c1a95021d5" />
+
 # penjelasan kode
+
 1. Fungsi Utama: selection_sort_geprek(harga, menu)
 Fungsi ini adalah "otak" dari pengurutan data.  
 - n = len(harga): Program menghitung jumlah data yang ada dalam list harga.

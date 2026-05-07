@@ -14,6 +14,7 @@ Penjelasan Alur Program (Binary Search)
 -Perhitungan Titik Tengah (Median): Di dalam perulangan, program menentukan indeks tengah dengan rumus m = l + (r - l) // 2. Langkah ini bertujuan untuk membagi dua area pencarian secara terus-menerus.
 
 -Pengecekan Kondisi:
+
 Data Ditemukan: Jika nilai pada indeks tengah (arr[m]) sama dengan target, posisi disimpan dan pencarian selesai.
 Penyempitan Area: Jika nilai tengah lebih kecil dari target, pencarian fokus ke sisi kanan (l = m + 1). Jika lebih besar, pencarian fokus ke sisi kiri (r = m - 1).
 

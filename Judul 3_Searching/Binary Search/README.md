@@ -10,8 +10,11 @@ Algoritma yang digunakan adalah Binary Search dengan struktur data Array. Algori
 # Penjelasan Code
 Penjelasan Alur Program (Binary Search)
 -Inisialisasi Batas: Program menentukan batas awal pencarian menggunakan indeks kiri (l = 0) dan indeks kanan (r = n - 1).
+
 -Perhitungan Titik Tengah (Median): Di dalam perulangan, program menentukan indeks tengah dengan rumus m = l + (r - l) // 2. Langkah ini bertujuan untuk membagi dua area pencarian secara terus-menerus.
+
 -Pengecekan Kondisi:
 Data Ditemukan: Jika nilai pada indeks tengah (arr[m]) sama dengan target, posisi disimpan dan pencarian selesai.
 Penyempitan Area: Jika nilai tengah lebih kecil dari target, pencarian fokus ke sisi kanan (l = m + 1). Jika lebih besar, pencarian fokus ke sisi kiri (r = m - 1).
+
 -Hasil Akhir: Jika perulangan selesai dan data tidak ditemukan, fungsi mengembalikan nilai -1, yang kemudian akan dikonfirmasi oleh program utama (fungsi main) kepada pengguna.

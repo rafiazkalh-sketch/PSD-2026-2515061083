@@ -23,4 +23,4 @@ Penyempitan Area: Jika nilai tengah lebih kecil dari target, pencarian fokus ke 
 <img width="732" height="354" alt="Screenshot 2026-05-07 225827" src="https://github.com/user-attachments/assets/d4ca5bc4-3a77-459e-b352-ea92c7006c99" />
 
 # Link Youtube
-
+https://youtu.be/lAVl0Q-heSc

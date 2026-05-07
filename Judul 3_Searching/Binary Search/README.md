@@ -19,3 +19,8 @@ Data Ditemukan: Jika nilai pada indeks tengah (arr[m]) sama dengan target, posis
 Penyempitan Area: Jika nilai tengah lebih kecil dari target, pencarian fokus ke sisi kanan (l = m + 1). Jika lebih besar, pencarian fokus ke sisi kiri (r = m - 1).
 
 -Hasil Akhir: Jika perulangan selesai dan data tidak ditemukan, fungsi mengembalikan nilai -1, yang kemudian akan dikonfirmasi oleh program utama (fungsi main) kepada pengguna.
+# Output Program
+<img width="732" height="354" alt="Screenshot 2026-05-07 225827" src="https://github.com/user-attachments/assets/d4ca5bc4-3a77-459e-b352-ea92c7006c99" />
+
+# Link Youtube
+

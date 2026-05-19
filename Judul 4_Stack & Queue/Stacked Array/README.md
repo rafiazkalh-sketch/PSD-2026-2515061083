@@ -1,2 +1,5 @@
-# Simulasi Tombol Back Browser dengan Stack Array
+# SIMULASI TOMBOL BACK BROWSER DENGAN STACK ARRAY
 # Deskripsi Singkat
+Program ini dirancang untuk mensimulasikan mekanisme tombol kembali (Back Button) yang terdapat pada aplikasi penjelajah web (web browser). Fungsi utama dari program ini adalah mengelola riwayat kunjungan situs web pengguna secara dinamis, di mana pengguna dapat membuka halaman baru, kembali ke halaman sebelumnya, serta melihat halaman aktif saat ini. Implementasi ini memberikan gambaran nyata bagaimana sistem operasi atau aplikasi memanfaatkan manajemen memori tumpukan dalam aktivitas komputasi sehari-hari.
+
+Struktur data yang diterapkan dalam program ini adalah Stack (Tumpukan) dengan representasi fisik menggunakan Array (List). Karakteristik utama dari Stack adalah pemrosesan data yang mengikuti prinsip LIFO (Last In, First Out), di mana elemen yang terakhir kali dimasukkan (Push) akan menjadi elemen yang pertama kali dikeluarkan (Pop). Dalam studi kasus ini, halaman web yang baru saja dibuka oleh pengguna akan menempati posisi teratas tumpukan (top_idx). Ketika pengguna melakukan aksi navigasi mundur (kembali), sistem secara otomatis menghapus halaman teratas tersebut agar pengguna dapat dialihkan ke halaman yang dikunjungi sebelumnya.

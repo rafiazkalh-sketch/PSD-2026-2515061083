@@ -13,22 +13,16 @@ Struktur data yang diterapkan dalam program ini adalah Stack (Tumpukan) dengan r
 Program ini mengimplementasikan struktur data Stack (Tumpukan) menggunakan Array/List di Python untuk mensimulasikan fitur tombol kembali (Back Button) pada web browser. Operasi data mengikuti prinsip LIFO (Last In, First Out).
 
 1. Atribut Class StackArray
-self.MAX: Kapasitas maksimal tumpukan riwayat halaman.
-
-self.st: Array penyimpan data riwayat kunjungan (diinisialisasi dengan None).
-
-self.top_idx: Penunjuk indeks elemen teratas. Bernilai -1 saat tumpukan kosong.
+   -self.MAX: Kapasitas maksimal tumpukan riwayat halaman.
+   -self.st: Array penyimpan data riwayat kunjungan (diinisialisasi dengan None).
+   -self.top_idx: Penunjuk indeks elemen teratas. Bernilai -1 saat tumpukan kosong.
 
 2. Metode/Fungsi Utama
-is_empty() & is_full(): Memvalidasi kondisi tumpukan apakah sedang kosong (top_idx == -1) atau sudah penuh (top_idx == MAX - 1).
-
-push(x): Membuka halaman web baru. Menaikkan top_idx sebesar 1 lalu memasukkan data ke dalam array.
-
-pop(): Menekan tombol Back. Mengeluarkan halaman teratas dengan cara menurunkan nilai top_idx sebesar 1.
-
-peek(): Menampilkan halaman yang sedang aktif di layar (elemen pada indeks top_idx) tanpa menghapusnya.
-
-display(): Menampilkan seluruh daftar riwayat aktif dari yang terbaru hingga terlama menggunakan perulangan mundur (for loop dengan step -1).
+   -is_empty() & is_full(): Memvalidasi kondisi tumpukan apakah sedang kosong (top_idx == -1) atau sudah penuh (top_idx == MAX - 1).
+   -push(x): Membuka halaman web baru. Menaikkan top_idx sebesar 1 lalu memasukkan data ke dalam array.
+   -pop(): Menekan tombol Back. Mengeluarkan halaman teratas dengan cara menurunkan nilai top_idx sebesar 1.
+   -peek(): Menampilkan halaman yang sedang aktif di layar (elemen pada indeks top_idx) tanpa menghapusnya.
+   -display(): Menampilkan seluruh daftar riwayat aktif dari yang terbaru hingga terlama menggunakan perulangan mundur (for loop dengan step -1).
 
 3. Fungsi main()
-Mengontrol alur program utama menggunakan perulangan menu interaktif (while) dan dilengkapi dengan fitur error handling (try-except) untuk mencegah program crash akibat kesalahan input dari pengguna.
+   Mengontrol alur program utama menggunakan perulangan menu interaktif (while) dan dilengkapi dengan fitur error handling (try-except) untuk mencegah program crash akibat kesalahan input dari pengguna.

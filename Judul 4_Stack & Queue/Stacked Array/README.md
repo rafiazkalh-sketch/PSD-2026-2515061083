@@ -35,3 +35,7 @@ Program ini mengimplementasikan struktur data Stack (Tumpukan) menggunakan Array
 5. Fungsi main()
    
    Mengontrol alur program utama menggunakan perulangan menu interaktif (while) dan dilengkapi dengan fitur error handling (try-except) untuk mencegah program crash akibat kesalahan input dari pengguna.
+# Output
+<img width="946" height="731" alt="Screenshot 2026-05-19 233526" src="https://github.com/user-attachments/assets/7ebce953-55eb-40c4-a280-778c21d0708b" />
+<img width="947" height="728" alt="Screenshot 2026-05-19 233610" src="https://github.com/user-attachments/assets/33d7a41f-841c-4c8a-add5-f2be480a45af" />
+<img width="947" height="692" alt="Screenshot 2026-05-19 233647" src="https://github.com/user-attachments/assets/edbfd83a-4e8f-42c5-90bd-346f129f54e2" />

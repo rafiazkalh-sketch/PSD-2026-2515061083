@@ -12,55 +12,35 @@ Struktur data utama yang diterapkan dalam program ini adalah Binary Search Tree 
 <img width="1014" height="478" alt="Screenshot 2026-05-26 211359" src="https://github.com/user-attachments/assets/391c2c1b-2241-464a-93ab-7054cf9248bc" />
 
 # Penjelasan Code
-Proyek ini adalah program simulasi pengorganisasian rak dan katalog perpustakaan digital menggunakan struktur data **Binary Search Tree (BST)** Dasar. Program ini dibuat menggunakan bahasa pemrograman Python dan berjalan secara interaktif melalui terminal/CLI.
+Program ini adalah sistem simulasi manajemen katalog perpustakaan digital yang menggunakan struktur data Binary Search Tree (BST) Dasar. Sistem ini berfungsi untuk mengotomatiskan penataan letak buku di dalam rak virtual dan melakukan pelacakan secara cepat berdasarkan Kode ID unik buku. Buku dengan ID yang lebih kecil dari Buku Pusat (Root) akan otomatis belok ke rak kiri, sedangkan ID yang lebih besar akan belok ke rak kanan. Selain untuk menambah dan mencari buku, program ini juga dilengkapi dengan fungsi navigasi cetak data (traversal) serta penampil statistik perpustakaan.
 
----
+Penjelasan Detail Blok Kode (Berdasarkan Baris)
+Baris 1 – 6: Struktur Data Buku (class NodeBuku)
+Bagian ini adalah cetak biru untuk membuat wadah informasi setiap buku. Setiap kali buku baru didaftarkan, objek ini akan menyimpan data id_buku (sebagai penanda utama), judul buku, serta menyediakan tangan left (kiri) dan right (kanan) untuk menghubungkan cabang-cabang rak buku lainnya.
 
-## 📖 Deskripsi Studi Kasus
-Pada perpustakaan konvensional, buku ditata di rak berdasarkan kategori atau kode tertentu agar mudah dicari. Program ini mengadopsi konsep tersebut ke dalam ekosistem digital. Setiap buku direpresentasikan sebagai sebuah **Node** yang memiliki `id_buku` (sebagai *Key* unik) dan `judul`. 
+Baris 8 – 10: Inisialisasi Pohon (class KategoriBukuBST)
+Blok ini berfungsi untuk membuat sistem perpustakaannya itu sendiri. Saat pertama kali dibuat, variabel self.root diatur ke nilai None sebagai penanda bahwa perpustakaan digital ini statusnya masih kosong total.
 
-Sistem akan menata penempatan buku secara otomatis menggunakan algoritma **BST**:
-* Buku dengan Kode ID yang **lebih kecil** dari Buku Pusat (*Root*) akan dialokasikan ke cabang rak sebelah **kiri**.
-* Buku dengan Kode ID yang **lebih besar** dari Buku Pusat (*Root*) akan dialokasikan ke cabang rak sebelah **kanan**.
+Baris 12 – 25: Logika Tambah Buku (Insert)
+Fungsi tambah_buku dan _tambah_node bekerja secara rekursif (memanggil dirinya sendiri) untuk menaruh buku baru di posisi yang tepat. Aturannya konsisten: jika ID buku baru lebih kecil dari ID buku yang dicek, sistem akan mengarahkannya ke cabang kiri; jika lebih besar, sistem akan mengarahkannya ke cabang kanan.
 
-Konsep ini menjamin efisiensi waktu pencarian data buku serta memungkinkan penyajian katalog yang otomatis berurutan.
+Baris 27 – 37: Logika Lacak Posisi Buku (Search)
+Fungsi cari_buku dan _cari_node digunakan untuk mencari buku berdasarkan ID-nya. Karena menggunakan konsep BST, proses pencarian menjadi sangat cepat karena komputer tidak perlu mengecek seluruh buku satu per satu, melainkan langsung mengeliminasi setengah cabang rak di setiap langkah penelusuran.
 
----
+Baris 39 – 58: Logika Penelusuran Katalog (Traversal)
+Bagian ini berisi 3 metode untuk membaca dan mencetak seluruh koleksi buku yang ada di dalam rak:
 
-## 🧠 Struktur Blok Kode & Logika Program
+Inorder (katalog_inorder): Membaca rak kiri, pusat, lalu kanan. Hasilnya akan mencetak katalog buku secara rapi dan otomatis berurutan dari ID terkecil ke terbesar.
 
-Kode program ini dibagi secara terstruktur menjadi tiga bagian utama:
+Preorder (struktur_preorder): Membaca pusat dulu, baru rak kiri dan kanan. Ini dipakai untuk melihat struktur hierarki atas ke bawah (peta penempatan buku).
 
-### 1. Objek Data (`class NodeBuku`)
-* **Baris 1 - 6:** Berfungsi sebagai cetak biru (*blueprint*) dari wadah informasi buku. Setiap kali buku didaftarkan, objek ini akan menyimpan `id_buku`, `judul`, serta menyediakan pointer `left` dan `right` untuk menghubungkan antar-cabang rak.
+Postorder (arsip_postorder): Membaca rak kiri dan kanan dulu, baru pusatnya. Biasanya digunakan sistem untuk alur pengarsipan data dari elemen terdalam.
 
-### 2. Logika Utama BST (`class KategoriBukuBST`)
-Bagian ini mengatur manipulasi data pohon (*tree operations*):
-* **`tambah_buku` & `_tambah_node` (Baris 12 - 25):** Memasukkan data buku baru secara rekursif ke posisi rak kiri atau kanan yang tepat berdasarkan perbandingan angka ID.
-* **`cari_buku` & `_cari_node` (Baris 27 - 37):** Melacak keberadaan buku. Pencarian di BST sangat efisien karena sistem langsung mengeliminasi setengah cabang data di setiap percabangan.
-* **Fungsi Traversal (Baris 39 - 58):** * **`katalog_inorder`**: Mencetak katalog secara berurutan dari ID terkecil ke terbesar.
-  * **`struktur_preorder`**: Membaca struktur hierarki penempatan dari root (pohon atas) ke anak-anaknya (bawah).
-  * **`arsip_postorder`**: Membaca alur pemrosesan dari elemen terdalam/bawah menuju ke atas.
-* **Fungsi Statistik (Baris 60 - 84):**
-  * `id_terkecil` & `id_terbesar`: Menelusuri ujung kiri terdalam untuk nilai minimum, dan ujung kanan terdalam untuk nilai maksimum.
-  * `total_buku`: Menghitung jumlah keseluruhan node buku secara rekursif.
-  * `total_nilai_id`: Menghitung hasil akumulasi matematika dari seluruh *key* ID buku.
+Baris 60 – 74: Logika Deteksi ID Ekstrem (Min & Max)
+Fungsi id_terkecil akan terus berjalan ke arah cabang kiri paling ujung untuk menemukan buku dengan ID paling rendah. Sebaliknya, fungsi id_terbesar akan terus berjalan ke arah cabang kanan paling ujung untuk menemukan buku dengan ID paling tinggi.
 
-### 3. Antarmuka Utama (`def main()`)
-* **Baris 87 - 164:** Mengatur perulangan menu interaktif (Menu 1-10) di terminal. Dilengkapi dengan fitur *Error Handling* (`try-except ValueError`) untuk mencegah aplikasi *crash* jika pengguna salah memasukkan tipe data (misalnya mengetik huruf pada menu angka).
+Baris 76 – 84: Logika Hitung Statistik Perpustakaan (Count & Sum)
+Fungsi total_buku bekerja menghitung total seluruh buku yang ada di dalam pohon secara matematis, sedangkan fungsi total_nilai_id bertugas menjumlahkan semua angka ID buku yang terdaftar untuk kebutuhan akumulasi nilai sistem.
 
----
-
-## 🚀 Skenario Pengujian Sistem (Output Terminal)
-
-Untuk menguji seluruh logika algoritma berjalan dengan sempurna, jalankan program lalu masukkan data dengan urutan acak berikut (agar membentuk pohon seimbang):
-
-1. **Menu 1 (Tambah Buku):** ID `50`, Judul `Algoritma Dasar` (Otomatis menjadi Root)
-2. **Menu 1 (Tambah Buku):** ID `30`, Judul `Pemrograman Python` (Belok ke Rak Kiri karena $30 < 50$)
-3. **Menu 1 (Tambah Buku):** ID `70`, Judul `Sistem Jaringan` (Belok ke Rak Kanan karena $70 > 50$)
-
-### Hasil Visualisasi Struktur BST di Memori:
-```text
-           [50: Algoritma Dasar]
-               /           \
-[30: Pemrograman Python]   [70: Sistem Jaringan]
+Baris 87 – 164: Antarmuka Terminal & Pengaman Kode (def main())
+Blok terakhir ini bertugas menampilkan menu interaktif pilihan 1 sampai 10 di layar terminal. Di dalamnya juga disisipkan fitur pengaman try-except ValueError agar jika pengguna tidak sengaja mengetik huruf pada menu yang seharusnya angka, program tidak akan rusak atau mati mendadak, melainkan hanya menampilkan pesan error dan mengulang menunya kembali.

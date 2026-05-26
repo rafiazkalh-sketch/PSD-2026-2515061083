@@ -14,32 +14,29 @@ Struktur data utama yang diterapkan dalam program ini adalah Binary Search Tree 
 # Penjelasan Code
 Program ini adalah sistem simulasi manajemen katalog perpustakaan digital yang menggunakan struktur data Binary Search Tree (BST) Dasar. Sistem ini berfungsi untuk mengotomatiskan penataan letak buku di dalam rak virtual dan melakukan pelacakan secara cepat berdasarkan Kode ID unik buku. Buku dengan ID yang lebih kecil dari Buku Pusat (Root) akan otomatis belok ke rak kiri, sedangkan ID yang lebih besar akan belok ke rak kanan. Selain untuk menambah dan mencari buku, program ini juga dilengkapi dengan fungsi navigasi cetak data (traversal) serta penampil statistik perpustakaan.
 
-Baris 1 – 6: Struktur Data Buku (class NodeBuku)
+Baris 1 – 6: Struktur Data Buku (class NodeBuku).
 Bagian ini adalah cetak biru untuk membuat wadah informasi setiap buku. Setiap kali buku baru didaftarkan, objek ini akan menyimpan data id_buku (sebagai penanda utama), judul buku, serta menyediakan tangan left (kiri) dan right (kanan) untuk menghubungkan cabang-cabang rak buku lainnya.
 
-Baris 8 – 10: Inisialisasi Pohon (class KategoriBukuBST)
+Baris 8 – 10: Inisialisasi Pohon (class KategoriBukuBST).
 Blok ini berfungsi untuk membuat sistem perpustakaannya itu sendiri. Saat pertama kali dibuat, variabel self.root diatur ke nilai None sebagai penanda bahwa perpustakaan digital ini statusnya masih kosong total.
 
-Baris 12 – 25: Logika Tambah Buku (Insert)
+Baris 12 – 25: Logika Tambah Buku (Insert).
 Fungsi tambah_buku dan _tambah_node bekerja secara rekursif (memanggil dirinya sendiri) untuk menaruh buku baru di posisi yang tepat. Aturannya konsisten: jika ID buku baru lebih kecil dari ID buku yang dicek, sistem akan mengarahkannya ke cabang kiri; jika lebih besar, sistem akan mengarahkannya ke cabang kanan.
 
-Baris 27 – 37: Logika Lacak Posisi Buku (Search)
+Baris 27 – 37: Logika Lacak Posisi Buku (Search).
 Fungsi cari_buku dan _cari_node digunakan untuk mencari buku berdasarkan ID-nya. Karena menggunakan konsep BST, proses pencarian menjadi sangat cepat karena komputer tidak perlu mengecek seluruh buku satu per satu, melainkan langsung mengeliminasi setengah cabang rak di setiap langkah penelusuran.
 
-Baris 39 – 58: Logika Penelusuran Katalog (Traversal)
+Baris 39 – 58: Logika Penelusuran Katalog (Traversal).
 Bagian ini berisi 3 metode untuk membaca dan mencetak seluruh koleksi buku yang ada di dalam rak:
+-Inorder (katalog_inorder): Membaca rak kiri, pusat, lalu kanan. Hasilnya akan mencetak katalog buku secara rapi dan otomatis berurutan dari ID terkecil ke terbesar.
+-Preorder (struktur_preorder): Membaca pusat dulu, baru rak kiri dan kanan. Ini dipakai untuk melihat struktur hierarki atas ke bawah (peta penempatan buku).
+-Postorder (arsip_postorder): Membaca rak kiri dan kanan dulu, baru pusatnya. Biasanya digunakan sistem untuk alur pengarsipan data dari elemen terdalam.
 
-Inorder (katalog_inorder): Membaca rak kiri, pusat, lalu kanan. Hasilnya akan mencetak katalog buku secara rapi dan otomatis berurutan dari ID terkecil ke terbesar.
-
-Preorder (struktur_preorder): Membaca pusat dulu, baru rak kiri dan kanan. Ini dipakai untuk melihat struktur hierarki atas ke bawah (peta penempatan buku).
-
-Postorder (arsip_postorder): Membaca rak kiri dan kanan dulu, baru pusatnya. Biasanya digunakan sistem untuk alur pengarsipan data dari elemen terdalam.
-
-Baris 60 – 74: Logika Deteksi ID Ekstrem (Min & Max)
+Baris 60 – 74: Logika Deteksi ID Ekstrem (Min & Max).
 Fungsi id_terkecil akan terus berjalan ke arah cabang kiri paling ujung untuk menemukan buku dengan ID paling rendah. Sebaliknya, fungsi id_terbesar akan terus berjalan ke arah cabang kanan paling ujung untuk menemukan buku dengan ID paling tinggi.
 
-Baris 76 – 84: Logika Hitung Statistik Perpustakaan (Count & Sum)
+Baris 76 – 84: Logika Hitung Statistik Perpustakaan (Count & Sum).
 Fungsi total_buku bekerja menghitung total seluruh buku yang ada di dalam pohon secara matematis, sedangkan fungsi total_nilai_id bertugas menjumlahkan semua angka ID buku yang terdaftar untuk kebutuhan akumulasi nilai sistem.
 
-Baris 87 – 164: Antarmuka Terminal & Pengaman Kode (def main())
+Baris 87 – 164: Antarmuka Terminal & Pengaman Kode (def main()).
 Blok terakhir ini bertugas menampilkan menu interaktif pilihan 1 sampai 10 di layar terminal. Di dalamnya juga disisipkan fitur pengaman try-except ValueError agar jika pengguna tidak sengaja mengetik huruf pada menu yang seharusnya angka, program tidak akan rusak atau mati mendadak, melainkan hanya menampilkan pesan error dan mengulang menunya kembali.

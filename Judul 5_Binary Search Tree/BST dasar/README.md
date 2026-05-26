@@ -1,1 +1,6 @@
-#Aplikasi Manajemen dan Pelacakan Koleksi Buku Perpustakaan Berbasis Algoritma BST
+# SISTEM MANAJEMEN DAN PELACAKAN KOLEKSI BUKU PERPUSTAKAAN BERBASIS BST
+# Deskripsi Singkat
+Program ini dirancang untuk mensimulasikan sistem manajemen dan katalogisasi pada perpustakaan digital secara dinamis. Fungsi utama dari program ini adalah mengelola penyimpanan data koleksi buku, melakukan pelacakan (pencarian) posisi buku secara cepat berdasarkan Kode ID uniknya, serta menyajikan data statistik perpustakaan seperti total koleksi dan nilai buku. Dengan adanya sistem ini, proses pengelompokan buku di dalam rak virtual dapat dilakukan secara otomatis dan terstruktur, meniru bagaimana perpustakaan nyata mengorganisasikan ribuan buku agar mudah ditemukan oleh pengunjung.
+
+Struktur data utama yang diterapkan dalam program ini adalah Binary Search Tree (BST) Dasar. Algoritma ini bekerja dengan membagi percabangan data menjadi dua arah berdasarkan nilai Key (Kode ID Buku). Ketika sebuah buku baru didaftarkan (Insert), sistem akan membandingkannya dengan komponen pusat (Root). Jika ID buku baru lebih kecil, maka ia akan dialokasikan ke cabang sebelah kiri (Left Child), dan jika lebih besar akan dialokasikan ke cabang sebelah kanan (Right Child). Penggunaan konsep BST ini memastikan efisiensi waktu pencarian (Search) yang optimal, serta memungkinkan penyajian data katalog yang otomatis terurut dari nilai terkecil ke terbesar melalui metode pembacaan tumpukan pohon secara Inorder Traversal.
+# Source Code

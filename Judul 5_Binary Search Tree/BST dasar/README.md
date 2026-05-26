@@ -49,4 +49,3 @@ Blok terakhir ini bertugas menampilkan menu interaktif pilihan 1 sampai 10 di la
 <img width="1014" height="905" alt="Screenshot 2026-05-26 213416" src="https://github.com/user-attachments/assets/cc9c80ce-98d3-4367-a624-762427ef7908" />
 <img width="1012" height="904" alt="Screenshot 2026-05-26 213458" src="https://github.com/user-attachments/assets/71333f60-7e0a-4290-a995-54b00e231fcf" />
 
-# Link Youtube

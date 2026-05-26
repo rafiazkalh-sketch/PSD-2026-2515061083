@@ -40,3 +40,13 @@ Fungsi total_buku bekerja menghitung total seluruh buku yang ada di dalam pohon 
 
 Baris 87 – 164: Antarmuka Terminal & Pengaman Kode (def main()).
 Blok terakhir ini bertugas menampilkan menu interaktif pilihan 1 sampai 10 di layar terminal. Di dalamnya juga disisipkan fitur pengaman try-except ValueError agar jika pengguna tidak sengaja mengetik huruf pada menu yang seharusnya angka, program tidak akan rusak atau mati mendadak, melainkan hanya menampilkan pesan error dan mengulang menunya kembali.
+# Output
+
+<img width="1011" height="908" alt="Screenshot 2026-05-26 213039" src="https://github.com/user-attachments/assets/4c81340a-1953-4327-a9e8-ecc5fc69ac07" />
+<img width="1015" height="902" alt="Screenshot 2026-05-26 213135" src="https://github.com/user-attachments/assets/06d62d58-7e8b-4555-bec0-ee0eb8149d62" />
+<img width="1017" height="904" alt="Screenshot 2026-05-26 213211" src="https://github.com/user-attachments/assets/44af772c-031e-4f42-a07d-6dc277a0b530" />
+<img width="1016" height="912" alt="Screenshot 2026-05-26 213316" src="https://github.com/user-attachments/assets/5fa77341-20f9-4522-9ed5-96fb893bfe93" />
+<img width="1014" height="905" alt="Screenshot 2026-05-26 213416" src="https://github.com/user-attachments/assets/cc9c80ce-98d3-4367-a624-762427ef7908" />
+<img width="1012" height="904" alt="Screenshot 2026-05-26 213458" src="https://github.com/user-attachments/assets/71333f60-7e0a-4290-a995-54b00e231fcf" />
+
+# Link Youtube

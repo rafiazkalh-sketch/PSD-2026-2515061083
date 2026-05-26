@@ -14,7 +14,6 @@ Struktur data utama yang diterapkan dalam program ini adalah Binary Search Tree 
 # Penjelasan Code
 Program ini adalah sistem simulasi manajemen katalog perpustakaan digital yang menggunakan struktur data Binary Search Tree (BST) Dasar. Sistem ini berfungsi untuk mengotomatiskan penataan letak buku di dalam rak virtual dan melakukan pelacakan secara cepat berdasarkan Kode ID unik buku. Buku dengan ID yang lebih kecil dari Buku Pusat (Root) akan otomatis belok ke rak kiri, sedangkan ID yang lebih besar akan belok ke rak kanan. Selain untuk menambah dan mencari buku, program ini juga dilengkapi dengan fungsi navigasi cetak data (traversal) serta penampil statistik perpustakaan.
 
-Penjelasan Detail Blok Kode (Berdasarkan Baris)
 Baris 1 – 6: Struktur Data Buku (class NodeBuku)
 Bagian ini adalah cetak biru untuk membuat wadah informasi setiap buku. Setiap kali buku baru didaftarkan, objek ini akan menyimpan data id_buku (sebagai penanda utama), judul buku, serta menyediakan tangan left (kiri) dan right (kanan) untuk menghubungkan cabang-cabang rak buku lainnya.
 

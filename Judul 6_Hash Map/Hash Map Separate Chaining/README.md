@@ -20,3 +20,9 @@ Kodingan ini membagi sistem menjadi dua bagian utama, yaitu objek data dan logik
 Untuk memanipulasi data, program ini menyediakan tiga fungsi utama yaitu tambah_kontak, cari_kontak, dan hapus_kontak. Saat menambah data, jika ID pelanggan sudah ada, sistem akan memperbarui namanya; namun jika ID baru tersebut memicu tabrakan data (collision), logika Separate Chaining akan otomatis mengantrekan node baru tersebut ke dalam rantai Linked List pada slot indeks yang sama. Fungsi pencarian dan penghapusan data bekerja sangat efisien karena sistem langsung melompat ke slot indeks hasil kalkulasi hash, lalu menelusuri rantai memori di dalamnya menggunakan perulangan. Seluruh logika ini dibungkus dalam menu interaktif pada fungsi main yang sudah dilengkapi pengaman try-except agar program tidak crash saat dijalankan.
 
 # Output Program
+
+<img width="1023" height="857" alt="Screenshot 2026-06-09 230441" src="https://github.com/user-attachments/assets/bccfb0d7-3dcc-433d-924b-ebfa2465926d" />
+<img width="1019" height="907" alt="Screenshot 2026-06-09 230503" src="https://github.com/user-attachments/assets/5b31b4c4-9183-41e8-8004-e0788bd6e838" />
+<img width="1022" height="566" alt="Screenshot 2026-06-09 230531" src="https://github.com/user-attachments/assets/29801f66-260f-4a84-9f16-5b31faa19fc7" />
+
+# Link Youtube

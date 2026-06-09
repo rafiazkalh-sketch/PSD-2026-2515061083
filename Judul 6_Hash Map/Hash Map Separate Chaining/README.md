@@ -8,3 +8,10 @@ Logika utama yang diterapkan dalam kodingan ini adalah struktur data Hash Map de
 
 # Source Code
 
+<img width="1058" height="876" alt="Screenshot 2026-06-09 225415" src="https://github.com/user-attachments/assets/760f96a9-38b1-4f34-833e-7628aa4f4ca7" />
+<img width="1060" height="852" alt="Screenshot 2026-06-09 225446" src="https://github.com/user-attachments/assets/28b9c310-8626-49e1-a554-41eb0ce4c95c" />
+<img width="1104" height="853" alt="Screenshot 2026-06-09 225529" src="https://github.com/user-attachments/assets/d3bc2bf4-4565-4ca7-9a1c-090fb1cf274e" />
+<img width="1058" height="414" alt="Screenshot 2026-06-09 225608" src="https://github.com/user-attachments/assets/d474f600-38f9-45cf-b4be-ea2dfecc0c3a" />
+
+# Penjelasan Code
+

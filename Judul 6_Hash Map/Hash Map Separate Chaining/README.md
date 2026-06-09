@@ -15,3 +15,8 @@ Logika utama yang diterapkan dalam kodingan ini adalah struktur data Hash Map de
 
 # Penjelasan Code
 
+Kodingan ini membagi sistem menjadi dua bagian utama, yaitu objek data dan logika tabel hash. Bagian pertama adalah NodeKontak yang berfungsi sebagai wadah untuk menyimpan id_pelanggan, nama_kontak, dan pointer next untuk menyambungkan rantai memori. Bagian kedua adalah BukuKontakHashMap yang bertindak sebagai pengelola database dengan menyediakan 10 slot penyimpanan. Sistem ini menggunakan fungsi hash berbasis operasi modulo untuk menentukan lokasi indeks data secara instan berdasarkan ID pelanggan yang dimasukkan.
+
+Untuk memanipulasi data, program ini menyediakan tiga fungsi utama yaitu tambah_kontak, cari_kontak, dan hapus_kontak. Saat menambah data, jika ID pelanggan sudah ada, sistem akan memperbarui namanya; namun jika ID baru tersebut memicu tabrakan data (collision), logika Separate Chaining akan otomatis mengantrekan node baru tersebut ke dalam rantai Linked List pada slot indeks yang sama. Fungsi pencarian dan penghapusan data bekerja sangat efisien karena sistem langsung melompat ke slot indeks hasil kalkulasi hash, lalu menelusuri rantai memori di dalamnya menggunakan perulangan. Seluruh logika ini dibungkus dalam menu interaktif pada fungsi main yang sudah dilengkapi pengaman try-except agar program tidak crash saat dijalankan.
+
+# Output Program
